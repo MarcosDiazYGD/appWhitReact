@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    padding: 2rem;
+}
+
+body {
+    padding: 2rem;
+    justify-content: center;    
+}
+
+.QuoteBox {
+    border-radius: 20px;
+    background-color: #fff;
+    width: 700px;
+    height: 350px;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 15px lightblue;
+}
+
+.phrase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    height: 70%;
+    width: 100%;
+    font-size: 25px;
+    line-height: 30px;
+    border: 2px dashed;
+    border-radius:20px ;
+    padding: 2rem;
+}
+
+.author {
+    font-size: 20px;
+    text-align: right;
+    border-bottom: 2px solid;
+    padding: .5rem;
+    border-radius:20px ;
+}
+
+.btnRandom{
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border: 1px solid lightblue;
+    background: transparent;
+    text-shadow: 0 0 20px black;
+}
+
+.fa-heart {
+    font-size: 25px;
+}
