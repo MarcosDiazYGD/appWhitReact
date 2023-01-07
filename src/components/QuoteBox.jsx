@@ -17,7 +17,7 @@ const QuoteBox = () => {
     '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
 
     const randomColorIndex = Math.floor(Math.random() * colorArray.length)
-    document.body.style = `background: ${colorArray[randomColorIndex]}`
+    document.body.style = `transition: background .3s ease; background: ${colorArray[randomColorIndex]}`
     
 
     const clickRandom = ()=> {
@@ -27,7 +27,7 @@ const QuoteBox = () => {
 
     return (
         <div>
-            <div className='QuoteBox' style={{color:colorArray[randomColorIndex]}}>
+            <div className='QuoteBox' style={{color:colorArray[randomColorIndex], transition: 'color .3s ease'}}>
                 <div className='phrase'>
                     {phrases[index].quote}
                 </div>
@@ -38,7 +38,7 @@ const QuoteBox = () => {
 
             </div>
             <div className='btnRandom'>
-            <button className='btn' onClick={clickRandom}>Random Phrase</button>
+            <button className='btn' onClick={ clickRandom }>Random Phrase</button>
             </div>
         </div>
     );

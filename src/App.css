@@ -10,7 +10,9 @@
 
 body {
     padding: 2rem;
-    justify-content: center;    
+    justify-content: center; 
+    min-height: 100vh;  
+
 }
 
 .QuoteBox {
@@ -22,6 +24,7 @@ body {
     padding: 2rem;
     margin-bottom: 1rem;
     box-shadow: 0 0 15px lightblue;
+
 }
 
 .phrase {
@@ -59,4 +62,13 @@ body {
 
 .fa-heart {
     font-size: 25px;
+}
+
+
+
+@media screen and (max-width:750px) {
+    .QuoteBox {
+        width: 100%;
+        height: fit-content;
+    }
 }
